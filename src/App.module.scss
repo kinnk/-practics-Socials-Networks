@@ -1,0 +1,29 @@
+@import './var.scss';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:$bgColor;
+    padding: 0 calc(20px - (100vw - 100%)) 0 0; 
+}
+.app{
+    
+    .app__container{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas: 
+        'header header'
+        'nav mc';
+        grid-template-rows:   1fr;
+        grid-template-columns: 2fr 10fr;
+        grid-gap: 10px;
+        .header{grid-area: header;}
+        .nav{grid-area: nav;}
+        .mc{grid-area: mc;}
+    }
+}
+
+

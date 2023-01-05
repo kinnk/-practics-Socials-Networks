@@ -1,0 +1,18 @@
+@import '../../../var.scss';
+@import '../../../mixin.scss';
+
+.profile{
+    color: $textColor;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    &__box{
+        @include box;
+    }
+    &__box img {
+        box-shadow: 1px 1px 15px 1px $bgColor;
+        border-radius: 50%;
+        width: 150px; height: 150px;
+    }
+}
+
+

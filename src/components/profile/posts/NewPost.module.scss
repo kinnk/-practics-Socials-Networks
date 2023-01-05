@@ -1,0 +1,29 @@
+@import '../../../mixin.scss';
+.newPost{
+    @include box;
+    display: grid;
+    grid-template-areas: 
+    't t''b b';
+    &__text {
+        grid-area: t;
+        width: 100%;
+        background-color: $boxBgColor;
+        border: none;
+        border-bottom: 1px solid $bBoxColor;
+        margin-bottom: 15px;
+        color: white;
+        outline: none;
+    }
+    &__btns{
+        grid-area: b;
+    }
+    &__btn{
+        border: none;
+        border-radius: 15px;
+        padding: 10px 15px;
+        margin-right: 10px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import './var.scss';
+
+@mixin box {
+    border:none;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px 10px;
+    background-color: $boxBgColor;
+}
+
+@mixin activeLink{
+    padding-left: 10px;
+    color: rgb(124, 1, 255);
+    border-left:2px solid;
+}

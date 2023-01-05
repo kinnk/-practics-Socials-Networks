@@ -1,0 +1,9 @@
+@import '../../mixin.scss';
+@import '../../var.scss';
+
+.container{
+    color: $textColor;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+
+}
